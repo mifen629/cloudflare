@@ -6,7 +6,6 @@
 .links-item-desc {white-space:normal;color:#000;text-align:left;text-overflow:allipsis;opacity:.7;font-weight:lighter;display:block;font-size:14px;-webkit-transition:.3s;-webkit-transition:.3s;transition:.3s;-moz-transition:.3s}
 .hide-overflow {overflow: hidden;}
 @media screen and (max-width: 800px) {.hide-overflow {overflow: auto;}}
-  <body class="hide-overflow">
     <ul id="tools" class="links-item-container">
       <a href="javascript:history.go(-1)"><li class="links-item-frame links-item-desc all">&nbsp;<i class="fa fa-arrow-left"></i>&nbsp;后退一页</li></a>
       <a href="javascript:history.go(1)"><li class="links-item-frame links-item-desc all">&nbsp;<i class="fa fa-arrow-right"></i>&nbsp;前进一页</li></a>
@@ -19,4 +18,3 @@
     document.getElementById("tools").style.top = e.clientY + "px";return false;}
     document.onclick = function(){document.getElementById("tools").style.display="none";}
     </script>
-  </body>
