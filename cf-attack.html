@@ -23,7 +23,8 @@
     .glass {background: rgba(0,0,0,0.15); border: 1px solid rgba(0,0,0,0.25); box-shadow: 0 8px 30px rgba(255,255,255,0.3);}
     .loader {border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #fff;}}
 	@media (max-width: 480px) {
-	.captcha-wrapper {transform: scale(0.75); transform-origin: center top; overflow-x: auto;}
+	.captcha-wrapper {width: 100%; overflow: auto;}
+	.captcha-wrapper > .scale-wrapper {transform: scale(0.75); transform-origin: top center; width: calc(100% / 0.75); height: auto;}
 	.glass {padding: 14px 10px;}
 	.glass iframe {max-width: 100% !important;}}
 </style>
@@ -35,7 +36,11 @@
         <h1>安全检查</h1>
         <p>您可能需要先通过一份简短的验证以证明您不属于机器人</p>
         <footer>
-            <div class="captcha-wrapper"> ::IM_UNDER_ATTACK_BOX:: </div>
+            <div class="captcha-wrapper">
+              <div class="scale-wrapper">
+              :IM_UNDER_ATTACK_BOX::
+              </div>
+            </div>
             <h2>Ray ID: ::RAY_ID::</h2>
             <h2>Client IP: ::CLIENT_IP::</h2>
         </footer>
