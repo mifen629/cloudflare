@@ -12,7 +12,7 @@ html, body {
 
 body {
   font-size: 15px;
-  background: url(https://apps.sutong.you/hotlink-ok/background/light.png) center/cover no-repeat;
+  background: url(./light.png) center/cover no-repeat;
   -webkit-font-smoothing: antialiased;
   color: rgba(34,47,62,1);
   line-height: 1.8;
@@ -73,7 +73,7 @@ footer {font-size: 10px; margin-top: 20px; opacity: .7;}
 
 @media (prefers-color-scheme: dark) {
   body {
-    background-image: url(https://apps.sutong.you/hotlink-ok/background/dark.png);
+    background-image: url(./dark.png);
   }
 
   footer, h1, h2, p {
