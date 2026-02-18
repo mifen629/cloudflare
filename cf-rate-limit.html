@@ -5,7 +5,6 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <link rel="shortcut icon" href="https://apps.yousut.ong/hotlink-ok/favicon.ico" type="image/x-icon" />
 <title>优速通 - 访问限制</title>
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
 <style>
     * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; cursor: url("https://apps.sutong.you/hotlink-ok/pointer.cur"),auto;}
     body {min-height: 100vh; background: #000; display: flex; justify-content: center; align-items: center; background-position: center center; background-size: cover; background-repeat: repeat; background-attachment: fixed; width: 100%; -webkit-user-select: none; user-select: none;}
@@ -23,10 +22,11 @@
     footer, h2, h1, p { color: #FFF; }
     .glass {background: rgba(0,0,0,0.15); border: 1px solid rgba(0,0,0,0.25); box-shadow: 0 8px 30px rgba(255,255,255,0.3);}
     .loader {border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #fff;}}
-	@media (max-width: 480px) {
-	.captcha-wrapper {transform: scale(0.5); transform-origin: center top;}
+	@media (max-width: 360px) {
+	.window { padding: 10px; }
 	.glass {padding: 14px 10px;}
-	.glass iframe {max-width: 100% !important;}}
+	.glass iframe {width: 100% !important; max-width: 100% !important;}
+	.captcha-wrapper {width: 100%;  max-width: 320px; margin: 0 auto;}}
 </style>
 </head>
 <body oncontextmenu="return false;">
