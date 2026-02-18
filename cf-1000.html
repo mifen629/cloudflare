@@ -1,42 +1,51 @@
 <!DOCTYPE html>
-<html lang="zh-cn">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="shortcut icon" href="https://apps.yousut.ong/hotlink-ok/favicon.ico" type="image/x-icon" />
-    <title>优速通 - 内部故障 - 基于CloudFlare</title>
-    <link rel="stylesheet" href="output.css" />
-    <style>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="shortcut icon" href="https://apps.yousut.ong/hotlink-ok/favicon.ico" type="image/x-icon" />
+<title>优速通 - 内部故障</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+    * {margin: 0; padding: 0; box-sizing: border-box; font-family: "Segoe UI", Arial, sans-serif; cursor: url("https://apps.sutong.you/hotlink-ok/pointer.cur"),auto;}
+    body {min-height: 100vh; background: #FFF; display: flex; justify-content: center; align-items: center; background-position: center center; background-size: cover; background-repeat: repeat; background-attachment: fixed; width: 100%; -webkit-user-select: none; user-select: none;}
+	footer {margin-top: 15px; font-size: 12px; opacity: 0.7; color: #000;}
+	h2 {margin-top: 15px; font-size: 12px; opacity: 0.7; color: #000;}
+	h1 {font-size: 22px; margin-bottom: 12px; color: #000;}
+    p {font-size: 14px; opacity: 0.9; margin-bottom: 20px; color: #000;}
+    .window {width: 90%; max-width: 520px; padding: 30px;}
+    .glass {background: rgba(255, 255, 255, 0.15); border-radius: 16px; padding: 30px 25px; text-align: center; backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px);border: 1px solid rgba(255, 255, 255, 0.25); box-shadow: 0 8px 30px rgba(0, 0, 0, 0.3); color: #FFF;}
+    .loader {width: 40px; height: 40px; border: 4px solid rgba(0,0,0,0.3); border-top: 4px solid #000; border-radius: 50%; margin: 0 auto 20px; animation: spin 1s linear infinite;}
+    .captcha-wrapper {width: 100%; display: flex; justify-content: center; overflow: hidden;}
+    @keyframes spin { to { transform: rotate(360deg); } }
     @media (prefers-color-scheme: dark) {
-    body { background-color: #000000 !important; color: #000000 !important; }
-    h1 { color: #ffffff !important; }
-    p { color: #ffffff !important; }
-    a { color: #58a6ff !important; }
-    a:hover { color: #1f6feb !important; }}
-    </style>
-  </head>
-  ​
-
-  <body class="antialiased-subpixel text-left layout-row">
-    <div class="w-full max-w-lg mx-auto mt-20 p-5">
-      <img src="logo.svg" />
-
-      <h1 class="font-bold text-2xl text-black">内部故障</h1>
-
-      <p class="text-gray-900">
-        这似乎是因为内部错误引起的故障，请给我们一些时间检修 😭
-      </p>
-      <p class="text-gray-900 text-base">
-        如果长时间没有恢复，您可以到
-        <a class="text-blue-600" href="tg://resolve?domain=u_speed_guest_chat">讨论区</a> 提醒我们
-        </br>*需要您安装 <a class="text-blue-600" href="https://t.me">✈Telegram应用程序</a>👆
-      </p>
-
-      <div class="text-gray-400 pt-4 text-sm">
-        <span> ::CLOUDFLARE_ERROR_1000S_BOX:: </span>
-        <p>Ray ID: ::RAY_ID::</p>
-        <p>Client IP: ::CLIENT_IP::</p>
-      </div>
+    body { background-image: url(https://apps.sutong.you/hotlink-ok/background/dark.svg) !important; color: #000 !important; }
+    footer, h2, h1, p { color: #FFF; }
+    .glass {background: rgba(0,0,0,0.15); border: 1px solid rgba(0,0,0,0.25); box-shadow: 0 8px 30px rgba(255,255,255,0.3);}
+    .loader {border: 4px solid rgba(255,255,255,0.3); border-top: 4px solid #fff;}}
+	@media (max-width: 480px) {
+	.captcha-wrapper {transform: scale(0.8); transform-origin: center top;}
+	.glass {padding: 14px 10px;}
+	.glass iframe {max-width: 100% !important;}}
+</style>
+</head>
+<body oncontextmenu="return false;">
+<div class="window">
+    <div class="glass">
+        <div class="loader"></div>
+        <h1>内部故障</h1>
+        <p>这似乎是因为内部错误引起的故障</p>
+        <footer>
+            <div class="captcha-wrapper"> ::CLOUDFLARE_ERROR_1000S_BOX:: </div>
+            <h2>Ray ID: ::RAY_ID::</h2>
+            <h2>Client IP: ::CLIENT_IP::</h2>
+        </footer>
+        <footer>版权所有 © 优速通</footer>
     </div>
-  </body>
+</div>
+<script type="text/javascript">
+document.addEventListener("contextmenu", e => {if (e.pointerType === "mouse") e.preventDefault();});
+document.addEventListener("selectstart", e => {if (e.pointerType === "mouse") e.preventDefault();});
+</script>
+</body>
 </html>
