@@ -3,7 +3,6 @@ html, body {height: 100%;}
 body {font-size: 15px; background: url(./light.png) center/cover no-repeat; -webkit-font-smoothing: antialiased; color: rgba(34,47,62,1); line-height: 1.8; display: flex; justify-content: center; align-items: center; overflow-x: hidden;}
 h1 {font-size: 25px; margin-bottom: 10px;}
 h2 {font-size: 10px; margin-top: 5px; opacity: .75;}
-a  {font-size: 10px; margin-top: 5px; opacity: .75; color: rgba(34,47,62,1); text-decoration: none;}
 p  {font-size: 15px; margin-bottom: 10px; opacity: .75;}
 footer {font-size: 10px; margin-top: 10px; opacity: .75;}
 .window {width: 90%; max-width: 520px; padding: 30px; margin: auto;}
@@ -14,7 +13,7 @@ footer {font-size: 10px; margin-top: 10px; opacity: .75;}
 @keyframes spin {to {transform: rotate(360deg);}}
 @media (prefers-color-scheme: dark) {
 body {background-image: url(./dark.png);}
-footer, h1, h2, a, p {color: #fff;}
+footer, h1, h2, p {color: #fff;}
 .glass {background: rgba(0,0,0,.15); border-color: rgba(0,0,0,.25); box-shadow: 0 0 30px 5px rgba(75,75,75,.6);}
 .loader {border-color: rgba(255,255,255,.3); border-top-color: #fff;}}
 @media (max-width: 480px) {
