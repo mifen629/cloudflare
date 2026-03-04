@@ -21,7 +21,7 @@ footer, h1, h2, p {color: #fff;}
 .glass iframe {max-width: 100%;}
 .captcha-wrapper {overflow: auto;}}
 @media (max-width: 480px) and (orientation: portrait) {
-body {align-items: stretch; justify-content: flex-start; padding: 20px 0;}
+body {min-height: 100vh; justify-content: center; align-items: center; padding: 20px;}}
 .window {margin: 0 auto;}
 .captcha-wrapper {text-align: center;}
 .scale-wrapper {transform: scale(.70); display: inline-block;}}
